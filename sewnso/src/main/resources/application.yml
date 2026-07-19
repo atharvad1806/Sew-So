@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: sewnso
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sewnso
+    username: sewnso
+    password: localdevpassword
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
