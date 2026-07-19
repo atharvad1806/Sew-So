@@ -26,6 +26,7 @@ CREATE TABLE product_yarn_requirement (
     quantity_grams INT NOT NULL
 );
 
+ALTER TABLE yarn_stock ADD COLUMN version BIGINT NOT NULL DEFAULT 0;
 
 CREATE TABLE app_user (
     id BIGSERIAL PRIMARY KEY,
