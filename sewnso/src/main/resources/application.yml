@@ -20,3 +20,11 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 
+app:
+  jwt:
+    secret: "jaidevjaidevjaimangalamurti12345"
+    expiration-ms: 86400000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
